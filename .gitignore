@@ -1,0 +1,42 @@
+# Python Bytecode and Cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Virtual Environments
+.venv/
+venv/
+env/
+ENV/
+
+# IDE and System Files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and Run Outputs
+*.log
+output.log
+
+# Datasets & Archives (EuroSAT is ~2.2GB, exceeds GitHub file size limits)
+EuroSAT.zip
+EuroSAT_Dataset/
+*.zip
+*.tar
+*.tar.gz
+
+# Model Weights and Checkpoints (Keras models exceed GitHub 100MB limit)
+*.keras
+*.h5
+*.pt
+*.pth
+*.ckpt
+*.onnx
+models/*.keras
+models/*.h5
+
+# Keep training history JSON metrics
+!models/*.json

@@ -1,0 +1,68 @@
+{
+    "test_accuracy": 0.9111111111111111,
+    "macro_precision": 0.9153188292819865,
+    "macro_recall": 0.9085666666666669,
+    "macro_f1": 0.9092090975647429,
+    "per_class_metrics": {
+        "AnnualCrop": {
+            "precision": 0.9712230215827338,
+            "recall": 0.9,
+            "f1-score": 0.9342560553633218,
+            "support": 300
+        },
+        "Forest": {
+            "precision": 0.8952095808383234,
+            "recall": 0.9966666666666667,
+            "f1-score": 0.943217665615142,
+            "support": 300
+        },
+        "HerbaceousVegetation": {
+            "precision": 0.9507575757575758,
+            "recall": 0.8366666666666667,
+            "f1-score": 0.8900709219858156,
+            "support": 300
+        },
+        "Highway": {
+            "precision": 0.9481132075471698,
+            "recall": 0.804,
+            "f1-score": 0.8701298701298701,
+            "support": 250
+        },
+        "Industrial": {
+            "precision": 0.9527896995708155,
+            "recall": 0.888,
+            "f1-score": 0.9192546583850931,
+            "support": 250
+        },
+        "Pasture": {
+            "precision": 0.9030612244897959,
+            "recall": 0.885,
+            "f1-score": 0.8939393939393939,
+            "support": 200
+        },
+        "PermanentCrop": {
+            "precision": 0.8503649635036497,
+            "recall": 0.932,
+            "f1-score": 0.8893129770992366,
+            "support": 250
+        },
+        "Residential": {
+            "precision": 0.8241758241758241,
+            "recall": 1.0,
+            "f1-score": 0.9036144578313253,
+            "support": 300
+        },
+        "River": {
+            "precision": 0.8646616541353384,
+            "recall": 0.92,
+            "f1-score": 0.8914728682170543,
+            "support": 250
+        },
+        "SeaLake": {
+            "precision": 0.992831541218638,
+            "recall": 0.9233333333333333,
+            "f1-score": 0.9568221070811744,
+            "support": 300
+        }
+    }
+}
