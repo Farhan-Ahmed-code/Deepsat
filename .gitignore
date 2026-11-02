@@ -40,3 +40,9 @@ models/*.h5
 
 # Keep training history JSON metrics
 !models/*.json
+
+# Node & Frontend Build Artifacts
+frontend/node_modules/
+frontend/.vite/
+
+

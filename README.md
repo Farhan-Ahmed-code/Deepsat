@@ -48,11 +48,39 @@ Both models were trained and benchmarked on an identical test split:
 ├── predict.py               # Single image / batch inference script
 ├── test_model.py            # Quick model test verification
 ├── show_baseline_model.py   # Baseline model summary & visual architecture graph
+├── run_app.py               # Single command to launch unified web app & API
 ├── requirements.txt         # Required Python dependencies
-├── models/                  # Training history and metadata (weights gitignored)
+├── backend/                 # FastAPI REST API & model inference server
+│   ├── server.py            # High-performance async server & model caching
+│   └── __init__.py
+├── frontend/                # React 18 + Vite + TypeScript + Tailwind CSS SPA
+│   ├── src/                 # Reusable components, pages, charts & types
+│   ├── package.json
+│   └── vite.config.ts
+├── models/                  # Checkpoints, training histories & architecture graphs
 ├── plots/                   # Loss curves, accuracy plots, confusion matrices
 └── results/                 # Metrics, classification reports, CSV results
 ```
+
+---
+
+## 🌐 Research Dashboard & Web Platform
+
+DeepSatVision includes a professional research dashboard built with **React 18**, **Vite**, **TypeScript**, **Tailwind CSS**, and **FastAPI** for university viva presentations:
+
+```bash
+# Launch the complete platform (Frontend + Backend on http://127.0.0.1:8000)
+python run_app.py
+```
+
+### Dashboard Features:
+1. **Overview & Benchmarks**: Real-time KPI counters, academic details, and model summary comparison.
+2. **Dataset Explorer**: 27,000 EuroSAT images, split distributions, and interactive class viewer with genuine Sentinel-2 tiles.
+3. **Model Architectures**: Structural layer graphs, parameter profiling (111.9K CNN vs 11.19M ResNet-18), and skip-connection mechanics.
+4. **Performance Analytics**: Interactive training/validation curves (20 epochs) via Recharts, confusion matrices, and per-class precision/recall/F1 breakdowns.
+5. **Live Viva Inference**: Interactive image upload and 1-click test tile selection, model toggle (ResNet-18 vs CNN), inference latency measurement, and ranked 10-class Softmax probability distributions.
+6. **Methodology Pipeline**: 11-stage deep learning workflow from ingestion and Z-score standardization to tf.data parallel pipelining.
+7. **Academic Dossier**: Problem statement, objectives, limitations, and future roadmap (Vision Transformers, multi-temporal change detection, Grad-CAM).
 
 ---
 
